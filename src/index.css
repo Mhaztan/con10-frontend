@@ -1,0 +1,34 @@
+/* Root Variables */
+:root {
+  --primary: #007bff;
+  --secondary: #0056b3;
+  --bg-light: #ffffff;
+  --bg-dark: #121212;
+  --text-light: #000000;
+  --text-dark: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Light & Dark Mode */
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-light);
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+[data-theme="dark"] {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+/* Layout */
+main {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
