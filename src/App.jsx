@@ -19,6 +19,7 @@ import ErrorPage from './pages/ErrorPage';
 import axios from 'axios';
 import NotFound from './pages/NotFound';
 import Home from './pages/Home';
+import { Analytics } from "@vercel/analytics/react"
 
 const MainContent = styled.div`
     display: flex;
@@ -138,6 +139,7 @@ function App() {
 
   return (
     <>
+      <Analytics />
       <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
         <GlobalStyles />
         <Router>
