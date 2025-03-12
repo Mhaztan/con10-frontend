@@ -1,5 +1,5 @@
-const API_BASE_URL = 'http://localhost:8000/api/content'; // Adjust as needed
-// const API_BASE_URL = 'https://con10.onrender.com/api/content'; // Adjust as needed
+// const API_BASE_URL = 'http://localhost:8000/api/content'; // Adjust as needed
+const API_BASE_URL = 'https://con10.onrender.com/api/content'; // Adjust as needed
 
 export const generateCaptions = async (topic, style) => {
     const response = await fetch(`${API_BASE_URL}/captions`, {
